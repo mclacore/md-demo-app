@@ -17,7 +17,7 @@ jobs:
         uses: massdriver-cloud/actions/image_push@v4
         with:
           namespace: mclacore
-          image-name: hello
+          image-name: hello-aws
           artifact: ${{ secrets.MASSDRIVER_ARTIFACT_ID }}
           region: us-west-2
           image-tag: ${{ github.sha }}
